@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0eff5" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:text="@string/cui_result_title"
+        android:textColor="#6d6666"
+        android:textSize="17sp" />
+<TextView
+        android:id="@+id/rotation_title_id"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff"
+        android:gravity="center"
+        
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:text="@string/cui_rotation_title"
+        android:textColor="#633366"
+        android:textSize="15sp" />
+    <RelativeLayout
+        android:id="@+id/layout_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/bg_blur" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="5dp" />
+
+        <RadioGroup
+            android:id="@+id/RadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/viewpager"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:checked="true"
+                android:drawableLeft="@drawable/cui_radiobutton_selector"
+                android:padding="2dp" />
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableLeft="@drawable/cui_radiobutton_selector"
+                android:padding="2dp" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/img_trim"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_margin="12dp"
+            android:padding="1dp"
+            android:scaleType="centerInside"
+            android:visibility="gone" />
+
+      
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_image"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/layout_front"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            
+            <EditText
+                            android:id="@+id/layout_front_content"
+                android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      
+        android:layout_alignParentTop="true"
+        android:background="#ffffff"
+        android:gravity="left"
+        
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+           
+        </RelativeLayout>
+    </ScrollView>
+
+   
+ 
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"
+        android:background="@drawable/cui_image_bg_btn"
+        android:onClick="onClick"
+        android:text="@string/cui_result_confirm"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

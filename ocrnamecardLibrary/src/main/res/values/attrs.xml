@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="FileBrowser">
+        <attr format="string" name="baseDir" />
+        <attr format="boolean" name="backFinish" />
+        <attr format="reference" name="folderImage" />
+        <attr format="reference" name="otherFileImage" />
+        <!-- extName&fileImage以后缀数字不断增加的好像不好定义T^T -->
+    </declare-styleable>
+
+</resources>

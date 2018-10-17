@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">文通名片识别</string>
+    <string name="backIndex">返回首页</string>
+    <string name="camera_againest">继续拍照</string>
+    <string name="handTakePic">拍照识别</string>
+    <string name="autoTakePic">自动扫描</string>
+    <string name="autoCheckLine">自动检测边线</string>
+    <string name="butcap">拍摄识别</string>
+    <string name="butlog2">识别图片</string>
+    <string name="butquit">退出</string>
+    <string name="testname">识别结果</string>
+    <string name="take_photo">拍照</string>
+    <string name="backbtn">返回 </string>
+    <string name="homebtn">首页 </string>
+    <string name="countinuebtn">继续</string>
+    <string name="c_1_20"></string>
+    <string name="space"></string>
+    <string name="toast_already_setting">已保存序列号</string>
+    <!-- 手动激活 -->
+    <string name="cardname">机器码：</string>
+    <string name="manualautobutlog">手动激活</string>
+    <string name="xlnoname">序列号：</string>
+    <!-- XXK24XWMJRYYRR6YY26CYY8EY XX96QXWNLFYY1Y0YY7ONYY7O1 -->
+    <string name="xlno"></string>
+    <string name="cardnoname">激活码：</string>
+    <!-- pad 3.1 QKMK3QSGAKANBG05LX2AN5PAL WITH_SIM JDFG0CHOQKNEHGRAJEAIGP1EQ 4CJCL0LVPI2RIPJABYQX8DUIF -->
+    <!-- pad 3.2 SAIBPKQKA712LASSDVYDZXPU1 -->
+    <!-- xueling U3ZG1RWZYJXCOXFUXZKA95A7V -->
+    <!-- phone   6MUOAION7REDBEO1RAAVGO3DR -->
+    <string name="cardno"></string>
+    <!-- 自动激活 -->
+    <string name="autoidcard"></string>
+    <string name="autocardname">机器码：</string>
+    <string name="autocdkeybutlog">自动激活</string>
+    <string name="autoxlnoname">序列号：</string>
+    <!-- XXZ16XWMTZRYB67YY5JFYY466 XXL1IXWMULWYOBKYY2S7YY900 -->
+    <string name="autoxlno"></string>
+    <!-- 其他 -->
+    <string name="hello"></string>
+    <string name="message"></string>
+    <string name="idcard"></string>
+    <string name="app_name_en">Authorize</string>
+    <string name="autobutlog">自动激活</string>
+    <string name="manualbutlog">手动激活</string>
+
+    <!-- string name="butlog">设置</string -->
+
+    <string name="distinguish">正在识别中......</string>
+    <string name="cut_image">正在裁剪中......</string>
+    <string name="dialog_title">首次使用若能联网请在此填写序列号，不区分大小写，并点击“授权验证”按钮，否则请点击“离线激活”按钮。</string>
+    <string name="butlog3">退出程序</string>
+    <string name="butlog">选择识别</string>
+    <string name="returnbutlog">返回</string>
+    <string name="toast_autofocus_failure">自动对焦失败，请重新拍摄</string>
+    <string name="recognized_failed">识别服务调用失败</string>
+    <string name="recogResult2">识别结果:</string>
+    <string name="Please_wait">正在识别中请稍候!</string>
+    <string name="OpenedCutting">打开裁切</string>
+    <string name="Please_active_program">请激活程序</string>
+    <string name="serviceExtrance">服务入口</string>
+    <string name="takePicRecog">拍照识别</string>
+    <string name="active_program">激活程序</string>
+    <string name="license_verification_failed">授权验证</string>
+    <string name="offline_activation">离线激活</string>
+    <string name="online_activation">在线激活</string>
+    <string name="dialog_alert">提示</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="toast_please_retake">请重新拍摄</string>
+    <string name="takepic_btn_string">拍照</string>
+    <string name="confirm_btn_string">确认</string>
+    <string name="reset_btn_string">重拍</string>
+    <string name="backbtn_string">返回</string>
+    <string name="light1_string">开闪关灯</string>
+    <string name="ClosedCutting">关闭裁切</string>
+    <string name="light2_string">关闪关灯</string>
+    <string name="dialog_message_send_admin">请将设备AndroidWT文件夹下的bucard.dev文件发送至中安Android产品授权管理员并取得激活文件，将激活文件拷贝到设备根目录下，再进行识别操作。</string>
+    <string name="unsupport_auto_focus">不支持自动对焦</string>
+    <string name="noFoundProgram">没有找到应用程序</string>
+    <string name="exception">未识别   代码：</string>
+    <string name="exception1">激活失败 代码：</string>
+    <string name="exception2">识别初始化失败 代码：</string>
+    <string name="exception3">识别载入图像失败，请重新识别 代码：</string>
+    <string name="exception4">识别载入图像失败，识别初始化失败,请重试 代码：</string>
+    <string name="exception5">识别载入图像失败 代码：</string>
+    <string name="exception6">识别失败 代码：</string>
+    <string name="recogResult1">--识别结果--</string>
+    <string name="preview_hint_msg">请将名片正面置于此区域,尝试对齐边缘</string>
+    <string name="not_support_scan">此设备不支持扫描识别,请使用拍照识别</string>
+    <string name="unsupportflash">不支持闪光灯</string>
+    <string name="openCameraPermission">请打开相机权限</string>
+    <!-- 授权验证失败 -->
+    <string name="recognize_result">识别结果 :</string>
+    <string name="failed_readJPG_error">读jpg图片错误，可能是图片超过2048*1536分辨率</string>
+    <string name="failed_noInit_function">未调用初始化函数</string>
+    <string name="failed_validation_faile">没有激活或激活码校验失败</string>
+    <string name="failed_serial_number_null">指定序列号为null</string>
+    <string name="failed_disconnected_server"> 未连接到服务器</string>
+    <string name="failed_obtain_activation_code"> 获取激活码失败或未连接到服务器</string>
+    <string name="failed_noexist_serial_number"> 授权服务器无此序列号</string>
+    <string name="failed_serial_number_used"> 序列号已使用</string>
+    <string name="failed_unable_create_authfile"> 无法创建授权文件</string>
+    <string name="failed_check_activation_code"> 校验激活码失败</string>
+    <string name="failed_other_errors"> 其他错误</string>
+    <string name="failed_not_active"> 未激活</string>
+    <string name="failed_check_failure"> 激活文件校验失败</string>
+
+</resources>

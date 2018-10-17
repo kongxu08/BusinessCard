@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">BusinessCard</string>
+    <string name="company_name">BusinessCard</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="intsig_copyright">Intsig Company\n Copyright© 2009-2017</string>
+    <string name="card_complete">complete</string>
+    <string name="card_not_complete">no complete</string>
+    <string name="fail_to_contect_camcard">fail_to_contect_camcard</string>
+    <string name="no_support_feature">no_support_feature</string>
+    <string name="image_quality_ok">image_quality_ok</string>
+    <string name="image_shield">image_shield</string>
+    <string name="avatar_reflective">avatar_reflective</string>
+
+    <string name="color_image_yes">yes</string>
+    <string name="color_image_no">no</string>
+    <string name="cui_app_title">bcr scanner</string>
+    <string name="cui_dl_tips_take_photo">SDK preview</string>
+    <string name="cui_dl_tips_pick_photo">define preview</string>
+    <string name="cui_a_msg_empty_tips">choose sdk or preview to recognize</string>
+    <string name="cui_rotation_title">rotation</string>
+
+
+    <string name="cui_result_title">Recognze Result</string>
+    <string name="cui_result_confirm">Confirm</string>
+    <string name="cui_recog">recognize</string>
+
+    <string name="cui_welcome_title">IntSig Information Intelligence Systiem</string>
+    <string name="cui_welcome_module_title">Bcr preview recognitionV1.0</string>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cjwsjy.app.businesscard">
+
+    <!--合合权限 开始-->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!--合合权限 结束-->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Demo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".RecogResultActivity"
+            android:label="@string/app_name"
+            android:theme="@style/cui_anim_scenicchoose"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.cjwsjy.app.commonui.WelcomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".PreviewActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

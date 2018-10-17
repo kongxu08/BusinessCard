@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    >
+    <RelativeLayout
+        android:id="@+id/re_et_recogPicture"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+        <ScrollView
+
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:alwaysDrawnWithCache="true"
+            android:fillViewport="true"
+            android:orientation="vertical"
+            android:scrollbars="none"
+            android:layout_centerHorizontal="true"
+            >
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent" >
+                <EditText
+                    android:id="@+id/et_recogPicture"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:textSize="15sp"
+                    android:gravity="top" />
+                <Button
+                    android:id="@+id/btn_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/confirm" />
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/FrameLayout_activity_show_result"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" >
+            <ImageView
+                android:id="@+id/iv_recogPicture"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/FrameLayout_toolbar_show_result"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#AAAAAA"
+        >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/returnbutlog"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:textColor="#ffffff"/>
+            <TextView
+                android:id="@+id/tv_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/backIndex"
+                android:visibility="gone"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                />
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>

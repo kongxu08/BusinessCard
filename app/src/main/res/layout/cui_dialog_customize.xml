@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent">
+    
+    
+    <TextView 
+          android:id="@+id/online_text_id"
+       android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:textSize="13sp"
+        android:textIsSelectable="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp" 
+        />
+    
+    <TextView 
+          android:id="@+id/outline_text_id"
+       android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:textSize="13sp"
+         android:layout_marginLeft="10dp"
+        android:textIsSelectable="true"
+        android:layout_marginTop="5dp" 
+        />
+    <TextView 
+          android:id="@+id/date_text_id"
+       android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:textSize="13sp"
+         android:layout_marginLeft="10dp"
+        android:textIsSelectable="true"
+        android:layout_marginTop="5dp" 
+        />
+    <EditText
+      
+      
+        android:id="@+id/edit_text_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        />
+</LinearLayout>

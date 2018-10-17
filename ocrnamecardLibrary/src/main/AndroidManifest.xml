@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kernal.demo.bucard"
+    android:versionCode="6"
+    android:versionName="2.2.0.7" >
+    <uses-sdk android:minSdkVersion="14"
+        android:targetSdkVersion="24" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 名片识别 -->
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 关闭该包下的所有应用程序 -->
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <!-- 获取机型信息权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <!-- 访问internet权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!--
+    guangda
+     android:configChanges="orientation|keyboardHidden|screenSize|layoutDirection"
+    android:configChanges="orientation|keyboardHidden|screenSize"
+    <uses-permission android:name="cybertech.pstore.permission.COMPONENT" /> 
+    <uses-permission android:name="cybertech.permission.READ_PSTORE_USERINFO" /> 
+    <uses-permission android:name="cybertech.permission.READ_PSTORE_LINKINFO" />
+
+    -->
+    <application
+        android:theme="@style/AppTheme"
+        android:label="@string/app_name"
+        >
+      <meta-data android:name="android.max_aspect"
+                 android:value="2.1" />
+        <activity
+        android:name="checkauto.camera.com.CameraActivity"
+        android:label="@string/app_name"
+        android:configChanges="orientation|screenSize|keyboardHidden">
+    </activity>
+        <activity
+            android:name="checkauto.camera.com.ImageChooser"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+        </activity>
+        <activity android:name="checkauto.camera.com.util.PermissionActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name" >
+            </activity>
+        <activity
+            android:name="checkauto.camera.com.BucardRunner"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="bucard.receiver" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="kernel.BusinessCard.android.BuCardBean"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="kernel.bucard" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="kernel.BusinessCard.android.AuthService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="kernel.bucard.authService" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="kernel.BusinessCard.android.RecogService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="kernel.bucard.recogService" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.kernal.vicard.activity.fileProvider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="#000000">
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="visible" >
+    </SurfaceView>
+
+    <TextView
+        android:id="@+id/tv_camera_info"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="@string/preview_hint_msg"
+        android:visibility="gone"
+        android:textColor="#ffffff" />
+
+    <checkauto.camera.com.view.ViewfinderView
+        android:id="@+id/myViewfinderView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <ImageView
+        android:id="@+id/iv_kernel_camera_back"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/camera_back" />
+
+    <ImageView
+        android:id="@+id/iv_kernel_camera_flash"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/flash_off" />
+
+    <ImageView
+        android:id="@+id/iv_kernel_camera"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/take_pic_btn" />
+
+</RelativeLayout>

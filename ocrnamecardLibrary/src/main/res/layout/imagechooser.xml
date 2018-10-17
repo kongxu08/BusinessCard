@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/imagechooerLinearLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/butcode"
+        android:layout_width="150dip"
+        android:layout_height="50dip"
+        android:text="@string/active_program" 
+        android:visibility="gone"/>
+
+    <!-- android:text="@string/butcfg" -->
+
+    <!-- <Button
+        android:id="@+id/butcfg"
+        android:layout_width="150dip"
+        android:layout_height="50dip"
+        android:text="@string/butcfg" >
+    </Button> -->
+
+    <!-- android:text="@string/butcap" -->
+
+    <Button
+        android:id="@+id/butcap"
+        android:layout_width="150dip"
+        android:layout_height="50dip"
+        android:text="@string/takePicRecog"
+        android:visibility="gone" >
+    </Button>
+
+    <Button
+        android:id="@+id/handTakePic"
+        android:layout_width="150dip"
+        android:layout_height="50dip"
+        android:text="@string/handTakePic" />
+
+         <Button
+            android:id="@+id/autoTakePic"
+            android:layout_width="150dip"
+            android:layout_height="50dip"
+            android:text="@string/autoTakePic" 
+            />
+    <Button
+        android:id="@+id/autoCheckLine"
+        android:layout_width="150dip"
+        android:layout_height="50dip"
+        android:text="@string/autoCheckLine"
+        />
+            <!--	  <Button android:id="@+id/butcamera"
+	    android:layout_width="150dip"
+        android:layout_height="50dip"
+        android:text="系统相机"
+	      />	
+            -->
+
+            <Button
+                android:id="@+id/butlog"
+                android:layout_width="150dip"
+                android:layout_height="50dip"
+                android:text="@string/butlog" >
+            </Button>
+
+            <!-- <Button
+                android:id="@+id/butservice"
+                android:layout_width="150dip"
+                android:layout_height="50dip"
+                android:text="@string/serviceExtrance"
+                android:visibility="gone" >
+            </Button> -->
+            <!--
+	  <Button android:text="自动拍照识别" 
+		android:layout_width="150dip"
+        android:layout_height="50dip"
+	    android:id="@+id/butvideocamera" >
+	  </Button>	  
+            -->
+            <!--
+	  <Button android:text="支架自动识别" 
+	    android:id="@+id/holdercamera" 
+		android:layout_width="150dip"
+        android:layout_height="50dip"
+	    >
+	  </Button>
+            -->
+
+            <Button
+                android:id="@+id/butlog3"
+                android:layout_width="150dip"
+                android:layout_height="50dip"
+                android:text="@string/butlog3" >
+            </Button>
+
+            <TextView
+                android:id="@+id/meijihuoTextView"
+                android:layout_width="150dip"
+                android:layout_height="50dip"
+                android:gravity="center"
+                android:text="@string/Please_active_program"
+                android:textSize="20dip"
+                android:visibility="invisible" />
+        
+    
+
+</LinearLayout>
